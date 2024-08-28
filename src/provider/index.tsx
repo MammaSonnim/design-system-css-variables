@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from 'react';
-import { ProviderT, ContextT } from '../types';
+import { ProviderT, ContextT } from './types';
 
 export const Context = createContext<ContextT | null>(null);
 Context.displayName = 'ProviderContext';

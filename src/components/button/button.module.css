@@ -1,0 +1,19 @@
+.ds-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  color: var(--ds-component-color);
+  background-color: var(--ds-component-background-color);
+  cursor: pointer;
+}
+
+.ds-button--round {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}

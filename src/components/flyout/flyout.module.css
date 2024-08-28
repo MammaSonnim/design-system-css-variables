@@ -1,0 +1,47 @@
+.ds-flyout {
+  --flyout-width: 150px;
+
+  position: relative;
+}
+
+.ds-flyout__toggle-icon {
+  position: relative;
+}
+
+.ds-flyout__toggle-icon::before {
+  --flyout-toggle-icon-background-color: var(--ds-component-color);
+
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: var(--flyout-toggle-icon-background-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    -8px 0 0 var(--flyout-toggle-icon-background-color),
+    8px 0 0 var(--flyout-toggle-icon-background-color);
+}
+
+.ds-flyout__list {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  padding: 0px;
+  width: var(--flyout-width);
+  background-color: var(--ds-component-background-color);
+  box-shadow: 3px 3px 4px var(--ds-component-box-shadow-color);
+}
+
+.ds-flyout__item {
+  padding: 1rem;
+  list-style: none;
+  color: var(--ds-component-color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--ds-component-background-color-hover);
+  }
+}
