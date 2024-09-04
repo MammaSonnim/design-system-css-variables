@@ -1,0 +1,23 @@
+.variables {
+  --ds-size-10: 1px;
+  --ds-size-20: 2px;
+  --ds-size-30: 4px;
+  --ds-size-40: 8px;
+  --ds-size-50: 12px;
+  --ds-size-60: 16px;
+  --ds-size-70: 20px;
+  --ds-size-80: 24px;
+  --ds-size-90: 28px;
+  --ds-size-100: 32px;
+
+  --ds-font-size-10: 0.5rem;
+  --ds-font-size-20: 0.6rem;
+  --ds-font-size-30: 0.7rem;
+  --ds-font-size-40: 0.8rem;
+  --ds-font-size-50: 0.9rem;
+  --ds-font-size-60: 1rem;
+  --ds-font-size-70: 1.1rem;
+  --ds-font-size-80: 1.2rem;
+  --ds-font-size-90: 1.3rem;
+  --ds-font-size-100: 1.4rem;
+}

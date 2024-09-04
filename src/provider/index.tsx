@@ -1,21 +1,31 @@
 import React, { createContext, useContext } from 'react';
-import { ProviderT, ContextT } from './types';
+import { DSProviderT, DSContextT } from './types';
+import clsx from 'clsx';
 
-export const Context = createContext<ContextT | null>(null);
-Context.displayName = 'ProviderContext';
+export const DSContext = createContext<DSContextT | null>(null);
+DSContext.displayName = 'DSProviderContext';
 
-export const Provider: React.FC<ProviderT> = ({
+export const DSProvider: React.FC<DSProviderT> = ({
   theme,
-  colorScheme,
+  colorScheme = 'light',
+  scale = 'medium',
   children,
 }) => {
   return (
-    <Context.Provider value={{ theme, colorScheme }}>
-      {children}
-    </Context.Provider>
+    <DSContext.Provider value={{ theme, colorScheme, scale }}>
+      <div
+        className={clsx(
+          theme.common['variables'],
+          theme?.[colorScheme]?.['variables'],
+          theme?.[scale]?.['variables']
+        )}
+      >
+        {children}
+      </div>
+    </DSContext.Provider>
   );
 };
 
-export const useProvider = () => {
-  return useContext(Context);
+export const useDSProvider = () => {
+  return useContext(DSContext);
 };

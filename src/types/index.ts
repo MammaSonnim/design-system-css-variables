@@ -1,2 +1,2 @@
-export type ComponentSizeT = 'small' | 'medium' | 'large';
-export type ComponentVariantT = 'default' | 'primary' | 'warning';
+export type ComponentSizeT = 's' | 'm' | 'l';
+export type ComponentVariantT = 'default' | 'accent' | 'warning';

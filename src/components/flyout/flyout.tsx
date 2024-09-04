@@ -11,13 +11,13 @@ import styles from './flyout.module.css';
 
 const FlyoutContext = createContext<FlyoutContextT | null>(null);
 
-export const Flyout: FlyoutComponentT = (props) => {
+export const Flyout: FlyoutComponentT = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const providerValue: FlyoutContextT = { isOpen, setIsOpen };
 
   return (
     <FlyoutContext.Provider value={providerValue}>
-      <div className={clsx(styles['ds-flyout'])}>{props.children}</div>
+      <div className={clsx(styles['ds-flyout'])}>{children}</div>
     </FlyoutContext.Provider>
   );
 };
@@ -36,9 +36,13 @@ const Toggle: FC = () => {
   const { isOpen, setIsOpen } = useFlyout();
 
   return (
-    <Button shape="round" onClick={() => setIsOpen(!isOpen)}>
+    <Button
+      isRound
+      onClick={() => setIsOpen(!isOpen)}
+      aria-expanded={isOpen}
+      aria-label={isOpen ? 'Collapse Flyout' : 'Expand Flyout'}
+    >
       <span className={styles['ds-flyout__toggle-icon']}></span>
-      <span className="sr-only">Toggle</span>
     </Button>
   );
 };

@@ -1,0 +1,43 @@
+.variables {
+  --ds-static-white: #fff;
+  --ds-static-black: #000;
+
+  /* Colors */
+  --ds-component-background-color: var(--ds-color-gray-100);
+  --ds-component-background-color-hover: var(--ds-color-gray-200);
+  --ds-component-box-shadow-color: var(--ds-color-gray-400);
+  --ds-component-border-color: var(--ds-color-gray-500);
+  --ds-component-color: var(--ds-color-black);
+
+  --ds-component-accent-background-color: var(--ds-color-green-300);
+  --ds-component-accent-background-color-hover: var(--ds-color-green-400);
+
+  --ds-component-warning-background-color: var(--ds-color-red-300);
+  --ds-component-warning-background-color-hover: var(--ds-color-red-400);
+
+  /* Sizes */
+  --ds-component-padding: var(--ds-component-m-padding); /* default */
+  --ds-component-s-padding: var(--ds-size-40);
+  --ds-component-m-padding: var(--ds-size-50);
+  --ds-component-l-padding: var(--ds-size-60);
+
+  --ds-component-border-width: var(--ds-component-m-border-width);
+  --ds-component-s-border-width: var(--ds-size-10);
+  --ds-component-m-border-width: var(--ds-size-10);
+  --ds-component-l-border-width: var(--ds-size-10);
+
+  --ds-component-border-radius: var(--ds-component-m-border-radius);
+  --ds-component-s-border-radius: var(--ds-size-20);
+  --ds-component-m-border-radius: var(--ds-size-30);
+  --ds-component-l-border-radius: var(--ds-size-40);
+
+  --ds-component-font-size: var(--ds-component-m-font-size);
+  --ds-component-s-font-size: var(--ds-size-40);
+  --ds-component-m-font-size: var(--ds-size-50);
+  --ds-component-l-font-size: var(--ds-size-60);
+
+  --ds-component-round-size: var(--ds-component-round-m-size);
+  --ds-component-round-s-size: var(--ds-size-60);
+  --ds-component-round-m-size: var(--ds-size-70);
+  --ds-component-round-l-size: var(--ds-size-80);
+}

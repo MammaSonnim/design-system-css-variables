@@ -1,22 +1,16 @@
-import clsx from 'clsx';
 import './App.css';
-import { Provider } from './provider';
+import { DSProvider } from './provider';
 import { theme } from './themes/theme-default';
 import { Button } from './components/button/button';
 import { Flyout } from './components/flyout/flyout';
 
 const colorScheme = 'dark';
+const scale = 'medium';
 
 function App() {
   return (
-    <Provider theme={theme}>
-      <div
-        className={clsx(
-          'App',
-          theme.common['ds--common'],
-          theme[colorScheme]?.[`ds--${colorScheme}`]
-        )}
-      >
+    <DSProvider theme={theme} colorScheme={colorScheme} scale={scale}>
+      <div className="App">
         <header className="App-header">
           <h1>Test your components</h1>
         </header>
@@ -32,7 +26,7 @@ function App() {
           <Button>Let's test it</Button>
         </main>
       </div>
-    </Provider>
+    </DSProvider>
   );
 }
 

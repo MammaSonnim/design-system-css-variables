@@ -1,9 +1,0 @@
-.ds--common {
-  --ds-static-white: #fff;
-  --ds-static-black: #000;
-
-  --ds-component-background-color: var(--ds-gray-300);
-  --ds-component-background-color-hover: var(--ds-gray-400);
-  --ds-component-box-shadow-color: var(--ds-gray-400);
-  --ds-component-color: var(--ds-black);
-}

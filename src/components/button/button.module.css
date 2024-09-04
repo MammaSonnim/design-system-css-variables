@@ -3,17 +3,70 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
-  border: none;
+  padding: var(--ds-component-padding);
+  font-size: var(--ds-component-font-size);
+  border: var(--ds-component-border-width) solid
+    var(--ds-component-border-color);
+  border-radius: var(--ds-component-border-radius);
   box-shadow: none;
   color: var(--ds-component-color);
   background-color: var(--ds-component-background-color);
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--ds-component-background-color-hover);
+  }
+}
+
+.ds-button--s {
+  padding: var(--ds-component-s-padding);
+  border-width: var(--ds-component-s-border-width);
+  border-radius: var(--ds-component-s-border-radius);
+  font-size: var(--ds-component-s-font-size);
+}
+
+.ds-button--l {
+  padding: var(--ds-component-l-padding);
+  border-width: var(--ds-component-l-border-width);
+  border-radius: var(--ds-component-l-border-radius);
+  font-size: var(--ds-component-l-font-size);
+}
+
+.ds-button--accent {
+  background-color: var(--ds-component-accent-background-color);
+
+  &:hover {
+    background-color: var(--ds-component-accent-background-color-hover);
+  }
+}
+
+.ds-button--warning {
+  background-color: var(--ds-component-warning-background-color);
+
+  &:hover {
+    background-color: var(--ds-component-warning-background-color-hover);
+  }
 }
 
 .ds-button--round {
   position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+  align-content: center;
+  width: var(--ds-component-round-size);
+  height: var(--ds-component-round-size);
+  border-radius: 50%;
+}
+
+.ds-button--round.ds-button--s {
+  width: var(--ds-component-round-s-size);
+  height: var(--ds-component-round-s-size);
+}
+
+.ds-button--round.ds-button--l {
+  width: var(--ds-component-round-l-size);
+  height: var(--ds-component-round-l-size);
+}
+
+.ds-button--disabled {
+  pointer-events: none;
+  opacity: 0.6;
 }

@@ -1,0 +1,76 @@
+.variables {
+  --ds-color-white: #fff;
+  --ds-color-black: #000;
+
+  /* Gray Shades */
+  --ds-color-gray-50: #f9fafb;
+  --ds-color-gray-100: #f3f4f6;
+  --ds-color-gray-200: #e5e7eb;
+  --ds-color-gray-300: #d1d5db;
+  --ds-color-gray-400: #9ca3af;
+  --ds-color-gray-500: #6b7280;
+  --ds-color-gray-600: #4b5563;
+  --ds-color-gray-700: #374151;
+  --ds-color-gray-800: #1f2937;
+  --ds-color-gray-900: #111827;
+
+  /* Red Shades */
+  --ds-color-red-50: #fef2f2;
+  --ds-color-red-100: #fee2e2;
+  --ds-color-red-200: #fecaca;
+  --ds-color-red-300: #fca5a5;
+  --ds-color-red-400: #f87171;
+  --ds-color-red-500: #ef4444;
+  --ds-color-red-600: #dc2626;
+  --ds-color-red-700: #b91c1c;
+  --ds-color-red-800: #991b1b;
+  --ds-color-red-900: #7f1d1d;
+
+  /* Green Shades */
+  --ds-color-green-50: #ecfdf5;
+  --ds-color-green-100: #d1fae5;
+  --ds-color-green-200: #a7f3d0;
+  --ds-color-green-300: #6ee7b7;
+  --ds-color-green-400: #34d399;
+  --ds-color-green-500: #10b981;
+  --ds-color-green-600: #059669;
+  --ds-color-green-700: #047857;
+  --ds-color-green-800: #065f46;
+  --ds-color-green-900: #064e3b;
+
+  /* Blue Shades */
+  --ds-color-blue-50: #eff6ff;
+  --ds-color-blue-100: #dbeafe;
+  --ds-color-blue-200: #bfdbfe;
+  --ds-color-blue-300: #93c5fd;
+  --ds-color-blue-400: #60a5fa;
+  --ds-color-blue-500: #3b82f6;
+  --ds-color-blue-600: #2563eb;
+  --ds-color-blue-700: #1d4ed8;
+  --ds-color-blue-800: #1e40af;
+  --ds-color-blue-900: #1e3a8a;
+
+  /* Purple Shades */
+  --ds-color-purple-50: #f5f3ff;
+  --ds-color-purple-100: #ede9fe;
+  --ds-color-purple-200: #ddd6fe;
+  --ds-color-purple-300: #c4b5fd;
+  --ds-color-purple-400: #a78bfa;
+  --ds-color-purple-500: #8b5cf6;
+  --ds-color-purple-600: #7c3aed;
+  --ds-color-purple-700: #6d28d9;
+  --ds-color-purple-800: #5b21b6;
+  --ds-color-purple-900: #4c1d95;
+
+  /* Yellow Shades */
+  --ds-color-yellow-50: #fefce8;
+  --ds-color-yellow-100: #fef9c3;
+  --ds-color-yellow-200: #fef08a;
+  --ds-color-yellow-300: #fde047;
+  --ds-color-yellow-400: #facc15;
+  --ds-color-yellow-500: #eab308;
+  --ds-color-yellow-600: #ca8a04;
+  --ds-color-yellow-700: #a16207;
+  --ds-color-yellow-800: #854d0e;
+  --ds-color-yellow-900: #713f12;
+}

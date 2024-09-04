@@ -6,17 +6,22 @@ export type CSSModuleT = {
 
 export interface ThemeT {
   common: CSSModuleT;
-  light?: CSSModuleT;
+  light: CSSModuleT;
   dark?: CSSModuleT;
+  medium: CSSModuleT;
+  small?: CSSModuleT;
+  large?: CSSModuleT;
 }
 
-export interface ContextT {
-  theme?: ThemeT;
-  colorScheme?: string;
+export type ColorSchemeT = 'light' | 'dark';
+export type ScaleT = 'small' | 'medium' | 'large';
+
+export interface DSContextT {
+  theme: ThemeT;
+  colorScheme: ColorSchemeT;
+  scale: ScaleT;
 }
 
-export interface ProviderT {
-  theme?: ThemeT;
-  colorScheme?: string;
+export interface DSProviderT extends DSContextT {
   children: ReactNode;
 }

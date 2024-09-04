@@ -1,18 +1,22 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { theme as themeDefault } from '../../themes/theme-default';
-import { Provider } from '../../provider';
+import { DSProviderT } from '../../provider/types';
 import { Flyout } from './flyout';
-import { FlyoutComponentT } from './flyout.types';
+import { FlyoutPropsT } from './flyout.types';
+import { StoryWrapper } from '../story-wrapper';
 
 export default {
   title: 'Components/Flyout',
   component: Flyout,
 } as Meta;
 
-const Template: StoryFn<FlyoutComponentT> = () => {
+const Template: StoryFn<FlyoutPropsT & DSProviderT> = (props) => {
   return (
-    <Provider theme={themeDefault} colorScheme="light">
+    <StoryWrapper
+      theme={props.theme}
+      colorScheme={props.colorScheme}
+      scale={props.scale}
+    >
       <Flyout>
         <Flyout.Toggle />
         <Flyout.List>
@@ -21,7 +25,7 @@ const Template: StoryFn<FlyoutComponentT> = () => {
           <Flyout.Item>Item 3</Flyout.Item>
         </Flyout.List>
       </Flyout>
-    </Provider>
+    </StoryWrapper>
   );
 };
 
