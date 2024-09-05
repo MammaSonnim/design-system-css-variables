@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { fn } from '@storybook/test';
 import { Button } from './button';
 import { ButtonPropsT } from './button.types';
 import { DSProviderT } from '../../provider/types';
@@ -24,7 +23,6 @@ const Template: StoryFn<ButtonPropsT & DSProviderT> = (props) => {
 };
 
 const defaultProps = {
-  onClick: fn,
   label: 'Submit',
 };
 

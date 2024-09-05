@@ -7,6 +7,8 @@ export interface ButtonPropsT {
   type?: ButtonTypeT;
   variant?: ComponentVariantT;
   size?: ComponentSizeT;
+  ariaLabel?: string;
+  ariaExpanded?: boolean;
   isRound?: boolean;
   isLoading?: boolean;
   isDisabled?: boolean;

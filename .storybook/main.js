@@ -14,5 +14,19 @@ const config = {
     options: {},
   },
   staticDirs: ['../public'],
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      // faster build
+      compilerOptions: {
+        allowSyntheticDefaultImports: false,
+        esModuleInterop: false,
+      },
+      // auto-generate select/radio controls from union type
+      shouldExtractLiteralValuesFromEnum: true,
+      // hide undefined type on optional props in storybook
+      shouldRemoveUndefinedFromOptional: true,
+    },
+  },
 };
 export default config;

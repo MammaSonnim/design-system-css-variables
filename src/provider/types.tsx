@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { Dispatch, ReactNode, SetStateAction } from 'react';
 
 export type CSSModuleT = {
   [className: string]: string;
@@ -6,9 +6,9 @@ export type CSSModuleT = {
 
 export interface ThemeT {
   common: CSSModuleT;
-  light: CSSModuleT;
+  light: CSSModuleT; // default
   dark?: CSSModuleT;
-  medium: CSSModuleT;
+  medium: CSSModuleT; // default
   small?: CSSModuleT;
   large?: CSSModuleT;
 }
@@ -20,8 +20,14 @@ export interface DSContextT {
   theme: ThemeT;
   colorScheme: ColorSchemeT;
   scale: ScaleT;
+  setTheme: Dispatch<SetStateAction<ThemeT>>;
+  setColorScheme: Dispatch<SetStateAction<ColorSchemeT>>;
+  setScale: Dispatch<SetStateAction<ScaleT>>;
 }
 
-export interface DSProviderT extends DSContextT {
+export interface DSProviderT {
   children: ReactNode;
+  theme: ThemeT;
+  colorScheme?: ColorSchemeT;
+  scale?: ScaleT;
 }

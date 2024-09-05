@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import clsx from 'clsx';
+import { ComponentSizes, ComponentVariants } from '../../constants';
 import { ButtonPropsT } from './button.types';
 import styles from './button.module.css';
 
@@ -7,8 +8,10 @@ export const Button: FC<ButtonPropsT> = ({
   children,
   label,
   type = 'button',
-  variant = 'default',
-  size = 'm',
+  variant = ComponentVariants.DEFAULT,
+  size = ComponentSizes.M,
+  ariaExpanded,
+  ariaLabel,
   isRound,
   isDisabled,
   onClick,
@@ -25,6 +28,10 @@ export const Button: FC<ButtonPropsT> = ({
           [styles['ds-button--disabled']]: isDisabled,
         }
       )}
+      aria-label={ariaLabel}
+      aria-expanded={ariaExpanded}
+      aria-disabled={isDisabled}
+      disabled={isDisabled}
       onClick={onClick}
     >
       {label || children}

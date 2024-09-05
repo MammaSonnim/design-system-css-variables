@@ -1,8 +1,12 @@
 .variables {
+  /* static - values that don't depend on colorScheme or scale */
   --ds-static-white: #fff;
   --ds-static-black: #000;
 
-  /* Colors */
+  --ds-static-component-box-shadow: 3px 3px 4px
+    var(--ds-component-box-shadow-color);
+
+  /* Colors for most components */
   --ds-component-background-color: var(--ds-color-gray-100);
   --ds-component-background-color-hover: var(--ds-color-gray-200);
   --ds-component-box-shadow-color: var(--ds-color-gray-400);
@@ -15,7 +19,7 @@
   --ds-component-warning-background-color: var(--ds-color-red-300);
   --ds-component-warning-background-color-hover: var(--ds-color-red-400);
 
-  /* Sizes */
+  /* Sizes for most components */
   --ds-component-padding: var(--ds-component-m-padding); /* default */
   --ds-component-s-padding: var(--ds-size-40);
   --ds-component-m-padding: var(--ds-size-50);
@@ -40,4 +44,15 @@
   --ds-component-round-s-size: var(--ds-size-60);
   --ds-component-round-m-size: var(--ds-size-70);
   --ds-component-round-l-size: var(--ds-size-80);
+
+  --ds-component-with-text-min-width: var(--ds-component-with-text-m-min-width);
+  --ds-component-with-text-s-min-width: var(--ds-size-300);
+  --ds-component-with-text-m-min-width: var(--ds-size-400);
+  --ds-component-with-text-l-min-width: var(--ds-size-500);
+
+  /* Sizes for popups */
+  --ds-popup-distance-from-source: var(--ds-popup-m-distance-from-source);
+  --ds-popup-s-distance-from-source: var(--ds-size-60);
+  --ds-popup-m-distance-from-source: var(--ds-size-70);
+  --ds-popup-l-distance-from-source: var(--ds-size-80);
 }

@@ -9,6 +9,15 @@
   --ds-size-80: 40px;
   --ds-size-90: 48px;
   --ds-size-100: 56px;
+  --ds-size-200: 64px;
+  --ds-size-300: 80px;
+  --ds-size-400: 96px;
+  --ds-size-500: 128px;
+  --ds-size-600: 160px;
+  --ds-size-700: 192px;
+  --ds-size-800: 224px;
+  --ds-size-900: 256px;
+  --ds-size-1000: 288px;
 
   --ds-font-size-10: 0.6rem;
   --ds-font-size-20: 0.7rem;

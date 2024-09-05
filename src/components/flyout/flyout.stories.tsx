@@ -17,7 +17,7 @@ const Template: StoryFn<FlyoutPropsT & DSProviderT> = (props) => {
       colorScheme={props.colorScheme}
       scale={props.scale}
     >
-      <Flyout>
+      <Flyout {...props}>
         <Flyout.Toggle />
         <Flyout.List>
           <Flyout.Item>Item 1</Flyout.Item>
@@ -29,5 +29,27 @@ const Template: StoryFn<FlyoutPropsT & DSProviderT> = (props) => {
   );
 };
 
-export const Default = Template.bind({});
-Default.args = {};
+const defaultProps = {};
+
+export const LightSmall = Template.bind({});
+LightSmall.args = {
+  ...defaultProps,
+  scale: 'small',
+};
+
+export const LightMediumDefault = Template.bind({});
+LightMediumDefault.args = {
+  ...defaultProps,
+};
+
+export const LightLarge = Template.bind({});
+LightLarge.args = {
+  ...defaultProps,
+  scale: 'large',
+};
+
+export const DarkMedium = Template.bind({});
+DarkMedium.args = {
+  ...defaultProps,
+  colorScheme: 'dark',
+};
